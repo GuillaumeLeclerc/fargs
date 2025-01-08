@@ -77,8 +77,6 @@ or from CLI arguments. For CLI just use:
                 table_content = [['Name', 'Default', 'Constraint', 'Description']]
                 for path in entries:
                     param = self.entries[path]
-                    if not param.section.is_enabled(self):
-                        continue
                     argname = '.'.join(path)
                     # We do not want to show the args since we have our nice table after
                     if argname == 'help' or argname == 'h':
